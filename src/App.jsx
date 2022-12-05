@@ -1,9 +1,10 @@
 import { Component } from "react";
 import './App.css';
+import FilmsList from './components/filmsList.jsx';
 
 class App extends Component {
   constructor(props) {
-    super(props);``
+    super(props);
 
     this.state = {
       list:["ready", "set", "GO"],
@@ -41,6 +42,7 @@ class App extends Component {
           return <li key={item + idx}>{item}</li>;
     })}
         </ul>
+        <FilmsList />
       </div>
     );
   }
@@ -50,4 +52,3 @@ export default App;
 
 
 
-//Call this.setState() to update this.state.text to e.target.value (the value that is in the input)
